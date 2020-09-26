@@ -74,5 +74,10 @@ $(document).ready(function(){
         
         $('#search').click(search);
         $('#random').click(generateRand);
+    
+        $(document).on('keypress', function(e) {
+          if(e.which == 13) {
+            search();
+          }
         
 })
